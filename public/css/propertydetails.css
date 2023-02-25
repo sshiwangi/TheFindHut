@@ -1,0 +1,604 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400;500;600;700;800;900&family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin:0;
+    font-family: 'Inter','sans-serif';
+}
+body{
+    width: 100%;
+    height:100%;
+}
+.navbar{
+    width: 100%;
+    height: 65px;
+    background-color: #00D285;
+    display: flex;
+    align-items: center;
+ 
+}
+.logo-about-section{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+      width: 55px;
+      padding-left:120px;
+      font-size: 21px;
+      font-weight: 700;
+      color:#ffffff;
+}
+.about{
+    width: 34px;
+    height: 34px;
+    background-color: #D9D9D9;
+    border-radius: 50px;
+    margin-right: 120px;
+}
+.main-content-container {
+    padding: 50px 120px;
+    position: relative;
+    top: 62px;
+    margin-bottom: 100px;
+}
+.property-info{
+  
+    font-size: 34px;
+    font-weight:800;
+
+    
+}
+.property-images{
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+   padding-top:25px;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.column-1{
+    width: 56%;
+    height: 400px;
+    background-image: url(/Assets/Images/Property-picture-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+.column-2 {
+   width: 44%;
+    height: 400px;
+  
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+.column-2-1{
+    width: 100%;
+    height: 48%;
+    background-image: url(/Assets/Images/property-picture-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    margin-bottom: 15px;
+    
+
+}
+.column-2-2 {
+    width: 100%;
+    height: 48%;
+    background-image: url(/Assets/Images/proprty-picture-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    filter: brightness(50%);
+    
+}
+.plus-sign{
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+}
+.no-of-pictures{
+    font-size: 30px;
+    font-weight: 500;
+    color:white;
+}
+
+.property-price {
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+ .column-price-1 {
+    width: 50%;
+    height: 400px;
+    margin: 55px 15px 0px 0px;
+    padding: 0px 15px 0px 15px;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 4px 4px 3px rgba(134, 134, 134, 0.25);
+  
+}
+.about-property-column-1{
+    width: 100%;
+    height: 45%;
+    padding: 10px 0px 0px 10px;
+    font-size: 18px;
+    word-spacing: 2px;
+}
+.about-property-column-2{
+    width:100%;
+    height: 55%;
+    
+}
+
+
+.services-options{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+}
+.wifi{
+    width: 100%;
+    display: flex;
+    align-items:center;
+    font-size: 18px;
+    height: 26%;
+    
+}
+.wifi-img{
+   padding: 0px 15px 0px 15px;
+
+}
+.clean-rooms {
+    width: 100%;
+    height: 26%;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+
+}
+
+.clean-room-img {
+    padding: 0px 15px 0px 15px;
+
+}
+.hygenic-food{
+    width: 100%;
+    height: 26%;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+
+}
+
+.food-img {
+    padding: 0px 15px 0px 15px;
+
+}
+
+.column-price-2 {
+        width: 40%;
+        height: 400px;
+        margin-top: 55px;
+        font-size: 18px;
+        font-weight: 500;
+        border-radius: 9px;
+        display: flex;
+        justify-content: center;
+        box-shadow: 2px 4px 4px 3px rgba(134, 134, 134, 0.25);
+
+
+}
+.inner-box{
+    height: 400px;
+    width: 85%;
+   
+
+}
+.property-name{
+    width: 100%;
+    height: 50px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    
+
+}
+
+.property-cost{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-size: 17px;
+    font-weight: 500;
+
+}
+.tax-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 35px;
+}
+.total-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.pay-btn{
+    width: 100%;
+    height: 35px;
+    background-color:#00D285;
+    color:white;
+    text-align: center;
+    border-radius: 9px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ 
+   
+}
+
+.contact-seller-btn{
+        width: 100%;
+        height: 35px;
+        border:1px solid black;
+        text-align: center;
+        border-radius: 9px;
+        margin-top: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+}
+/* .footer-section{
+    display: flex;
+    width: 100%;
+    height: 400px; 
+}
+
+.footer-content {
+   width: 83%;
+   height: 400px;
+   margin-left: 130px;
+   border-top: 1px solid black;
+   display: flex;
+   
+}
+.footer-about-section {
+    width: 65%;
+    height: 400px;
+    background-color: beige;
+
+
+}
+.about-footer{
+    margin-top: 35px;
+    font-size: 21px;
+    font-weight: 500;
+}
+.footer-services-section{
+    width: 35%;
+    height: 400px;
+    background-color: bisque;
+}
+
+.copyright-section {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: #464646;
+    justify-content: center;
+    color: white;
+}  */
+
+/*@media screen and (max-width: 530px){
+
+@media screen and (max-width: 530px){
+
+    .property-name,
+        .property-cost,
+        .tax-box,
+        .total-box,
+        .pay-btn,
+        .contact-seller-btn {
+            font-size: 10px;
+        }
+    
+        .about-property-column-1,
+        .wifi,
+        .clean-rooms,
+        .hygenic-food {
+            font-size: 10px;
+        }
+    
+        .column-price-1 {
+            width: 50%;
+        }
+    
+        .column-price-2 {
+            width: 50%;
+    
+    
+        }
+    
+        .about-property-column-1 {
+            height: 50%;
+    
+        }
+    
+        .about-property-column-2 {
+            height: 50%;
+        }
+    
+        .property-info {
+            font-size: 18px;
+        }
+    
+        .plus-sign,
+        .no-of-pictures {
+            font-size: 20px
+        }
+    
+}
+ @media screen and (min-width:530px) and (max-width: 579px){
+    .property-name,
+        .property-cost,
+        .tax-box,
+        .total-box,
+        .pay-btn,
+        .contact-seller-btn {
+            font-size: 13px;
+        }
+       .about-property-column-1,.wifi,.clean-rooms,.hygenic-food{
+        font-size:13px;
+       }
+                 .column-price-1 {
+                     width: 50%;
+                 }
+        
+                 .column-price-2 {
+                     width: 50%;
+        
+         
+                    }
+                  .about-property-column-1 {
+                      height: 56%;
+        
+                  }
+        
+                  .about-property-column-2 {
+                      height: 44%;
+                  }
+                  .property-info{
+                    font-size: 18px;
+                  }
+             .plus-sign,.no-of-pictures{
+                font-size: 20px
+             }     
+}
+
+@media screen and (min-width:579px) and (max-width:653px){
+    
+
+   
+    .column-price-1 {
+        width:50%;
+    }
+
+    .column-price-2 {
+        width: 50%;
+        
+    }
+    .property-info{
+        font-size: 25px;
+    }
+   
+    .main-content-container {
+        padding: 50px 70px;
+    }
+    .logo{
+        padding:70px;
+    }
+    .about{
+        margin-right:70px;
+    }
+          .about-property-column-1 {
+              height: 50%;
+    
+          }
+    
+          .about-property-column-2 {
+              height: 50%;
+          }
+          .about-property-column-1,.wifi,.hygenic-food,.clean-rooms{
+            font-size: 16px;
+          }
+         .property-name,
+         .property-cost,
+         .tax-box,
+         .total-box,
+         .pay-btn,
+         .contact-seller-btn {
+             font-size: 16px;
+         }
+     
+
+}
+@media screen and (min-width:653px) and (max-width:690px) {
+    .column-price-1{
+        width:50%;
+    }
+    .column-price-2{
+        width:50%;
+    }
+    .property-info{
+        font-size: 30px;
+    }
+    .property-name,.about-property-column-1,.wifi,
+    .clean-rooms,
+    .hygenic-food{
+        font-size: 18px;
+    }
+    .property-name,.property-cost,.tax-box,.total-box,.pay-btn,.contact-seller-btn{
+        font-size: 18px;
+    }
+    .main-content-container {
+        padding: 50px 70px;
+    }
+    .logo
+    {
+        padding: 70px;
+    }
+    .about {
+        margin-right: 70px;
+    }
+         .about-property-column-1 {
+             height: 50%;
+    
+         }
+    
+         .about-property-column-2 {
+             height: 50%;
+         }
+}
+@media screen and (min-width:690px) and (max-width: 801px){
+     .column-price-1{
+        width:50%;
+
+     }
+     .column-price-2{
+        width: 50%;
+        
+     }
+     .property-name,.wifi,.clean-rooms,.hygenic-food{
+        font-size: 17px;
+     }
+     .pay-btn,.contact-seller-btn{
+        font-size: 16px;
+     }
+          .about-property-column-1 {
+              font-size: 18px;
+          }
+         .about-property-column-1 {
+             height: 61%;
+    
+         }
+    
+         .about-property-column-2 {
+             height: 39%;
+         }
+    
+}
+@media  screen and (min-width:801px) and (max-width:943px) {
+    .property-name{
+        font-size:18px;
+    } 
+         .column-price-1 {
+             width: 50%;
+         }
+    
+         .column-price-2 {
+             width: 50%;
+         }
+         .about-property-column-1{
+            font-size: 19px;
+         }
+    .about-property-column-1 {
+        height: 50%;
+        
+    }
+         .about-property-column-2 {
+             height: 50%;
+         }
+}
+@media screen and (min-width:943px){
+     .about-property-column-1{
+        height: 40%;
+
+     }
+     .about-property-column-2{
+        height: 60%;
+     }
+} */
+@media screen and (max-width:549px) {
+    .property-price {
+        flex-wrap: wrap;
+    }
+
+    .column-price-1,
+    .column-price-2 {
+        width: 100%;
+    }
+
+    .about-property-column-1 {
+        height: 45%;
+    }
+
+    .about-property-column-2 {
+        height: 55%;
+
+    }
+    .about-property-column-1,.wifi,.clean-rooms,.hygenic-food{
+        font-size:16px;
+    }
+    .property-info {
+        font-size: 20px;
+    }
+}
+@media screen and (min-width:549px) and (max-width:790px) {
+    .property-price{
+        flex-wrap:wrap;
+    }
+    .column-price-1,.column-price-2{
+        width:100%;
+    }
+    .about-property-column-1{
+        height:40%;
+        margin-top: 15px;
+    }
+    .about-property-column-2 {
+            height: 60%;
+        
+   }
+   .wifi,.clean-rooms,.hygenic-food{
+    font-size:18px;
+   }
+   .property-info{
+    font-size: 25px;
+   }
+}
+@media screen and (min-width:790px){
+    .about-property-column-1 {
+            height: 45%;
+            font-size:19px;
+            margin-top:15px;
+        }
+    
+        .about-property-column-2 {
+            height: 55%;
+    
+        }
+
+}
+  

@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400;500;600;700;800;900&family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
+
+body{
+    margin:0px;
+    font-family: 'Inter', sans-serif;
+}
+section.header-section-hostels {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+.nav-bar-hostels{
+    background-color: #00D285;
+    padding: 10px 31px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.brand-name-hostels {
+    font-size: 24px;
+}
+.nav-search-hostels {
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: space-between;
+    height: 40px;
+    padding: 0 5px;
+}
+.search-item-hostels {
+    color: #000000;
+    padding: 6px 15px 6px 0px;
+    font-size: 15px;
+    width: 100%;
+}
+.user-authentication-hostels {
+    background-color: #e8f5e9;
+    width: 40px;
+    height: 40px;
+    /* padding: 0 2px; */
+    border-radius: 25px;
+}
+.filters-section-hostels {
+    padding: 8px 31px;
+    display: flex;
+    box-shadow: 0px 2px 9px #c1c1c1;
+    background: url(/Assets/Images/blank.png);
+
+}
+.filter-item-box-hostels {
+    border: 1px solid black;
+    width: 11%;
+    padding: 4px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    margin-right: 5px;
+    height: 22px;
+}
+span.down-arrow-hostels {
+    display: flex;
+}
+section.main-section-hostels {
+    padding: 45px 31px;
+    position: relative;
+    top: 110px;
+    margin-bottom: 100px;
+}
+.section-heading-hostels {
+    font-weight: 600;
+    margin-bottom: 50px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+.items-container-hostels {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.items-hostels {
+    /* width: 280px; */
+    /* border-radius: 9px; */
+    /* border: 1px solid white; */
+    box-shadow: 0px 3px 9px 3px #c9c6c6;
+    width: 280px;
+    margin-right: 25px;
+    margin-bottom: 55px;
+    border-radius: 9px;
+}
+.items-image-hostels {
+    width: 280px;
+    height: 210px;
+    background: url(/Assets/Images/house.jpg);
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+}
+.items-details-hostels {
+    padding: 15px 5px;
+}
+.btn-container-hostels {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+.view-details-btn-hostels {
+    display: flex;
+    justify-content: center;
+    /* padding: 5px; */
+    padding-bottom: 10px;
+    background-color: #00d285;
+    color: white;
+    font-weight: 600;
+    padding-top: 10px;
+    width: 95%;
+    align-items: center;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+}
+input#search-bar {
+    width: 100%;
+    height: 35px;
+    font-size:17px;
+    border: none;
+    outline: none;
+}

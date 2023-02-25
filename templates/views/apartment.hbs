@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/landingpage.css">
+    <link rel="stylesheet" href="/css/hostels.css">
+    <title>Apartment</title>
+</head>
+<body>
+    <section class="header-section-hostels">
+        <nav class="nav-bar-hostels">
+            <div class="brand-name-hostels">Logo.</div>
+            <div class="nav-search-hostels">
+                <div class="search-item-hostels">
+                    <form>
+                        <label for="search-bar"></label>
+                        <input type="text" id="search-bar" name="search-bar" placeholder="Search">
+                    </form>
+                </div>
+                <div class="search-icon-hostels">
+                    <img src="/Assets/Images/search-icon.png" alt="" width="20px" height="20px">
+                </div>
+            </div>
+            <div class="user-authentication-hostels"></div>
+        </nav>
+        <div class="filters-section-hostels">
+            <div class="filter-item-box-hostels">
+                <select name="bhk" id="bhk">
+                    <option value="">bhk</option>
+                    <option value="1bhk">1bhk</option>
+                    <option value="2bhk">2bhk</option>
+                    <option value="2bhk">bhk</option>
+                </select>
+            </div>
+            <div class="filter-item-box-hostels">
+               <select name="budget" id="budget">
+                    <option value="">Budget</option>
+                    <option value="below 2000">Below $2000</option>
+                    <option value="2000 - 5000">$2000 - $5000</option>
+                    <option value="Above 5000">Above 5000</option>
+                </select>
+            </div>
+            <div class="filter-item-box-hostels">
+                <select name="amenities" id="amenities">
+                    <option value="">Amenities</option>
+                    <option value="yes">maintainance</option>
+                    <option value="no">pool</option>
+                </select>
+            </div>
+            <div class="filter-item-box-hostels">
+                <select name="squarefootage" id="squarefootage">
+                    <option value="">Square Footage</option>
+                    <option value="yes">2000</option>
+                    <option value="no">5000</option>
+                </select>
+            </div>
+            <div class="filter-item-box-hostels">
+                <select name="filters" id="filters">
+                    <option value="">Filters</option>
+                    {{!-- <option value="yes">yes</option>
+                    <option value="no">no</option> --}}
+                </select>
+            </div>
+        </div>
+    </section>
+    <section class="main-section-hostels">
+        <div class="section-heading-hostels">
+            Apartment
+        </div>
+        <div class="items-container-hostels">
+            {{!-- content --}}
+        </div>
+    </section>
+    {{>footer}}
+    <script src="js/apartment.js"></script>
+</body>
+</html>

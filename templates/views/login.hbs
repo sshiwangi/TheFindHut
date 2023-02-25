@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/login.css">
+    <title>Log in</title>
+</head>
+<body>
+    <div class="main-section">
+        <div class="log-in-essential">
+            <div class="greeting">
+                <div class="welcome">Welcome Back!</div>
+                <div class="greeting-content">
+                    Welcome back, please enter your details.
+                </div>  
+            </div>
+            
+            <div class="google">
+                <div class="google-logo">
+                    <img src="./Assets/Images/Google-icon.png" alt="google-logo" height="20px" width="20px">
+                </div>
+                <div class="google-content">
+                    Log in with Google
+                </div>
+            </div>
+            
+            <div class="or-section">
+                <hr class="hr1">or <hr class="hr2">
+            </div>
+            <form action="/login" method="POST">
+                <div class="email-section">
+                    <div class="email">Email</div>
+                    <input type="email" name="email" id="email-box" required="required" placeholder="Enter your Email">
+                </div>
+                <div class="password-section">
+                    <div class="password">Password</div>
+                    <input type="password" name="password" id="password-box" required="required" placeholder="Enter your password">
+                </div>
+                <div class="forgot-password-container">
+                    <div class="remember-me-box">
+                        <input type="checkbox" id="">
+                        Remember me
+                    </div>
+                    <div class="forgot-password-box">
+                        Forgot password?
+                    </div>
+                </div>
+                <div class="btn-container">
+                    <button type="submit" id="login-btn">
+                        Login
+                    </button>
+                </div>
+                <div class="sign-up-container">
+                    Don't have an account? <span class="sign-up">Sign up</span>
+                </div>
+            </form>
+        </div>
+        <div class="log-in-graphics">
+            <div class="image-container">
+                <img src="./Assets/Images/login-graphics.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/css/signup.css">
+    <title>Sign up</title>
+</head>
+<body>
+    <div class="main">
+        <div class="signup-graphics-container">
+            <img src="./Assets/Images/signup-graphics.png" id="signup-graphics-image" alt="sign up graphics" width="650px">
+        </div>
+        <div class="signup-essential-container">
+            <div class="signup-essentials">
+                <form action="/signup.hbs" method="POST">
+                    <div class="form-elements-container">
+                        <div class="form-elements-heading">Name</div>
+                        <input type="text" name="name" class="input-box" placeholder="">
+                    </div>
+                    <div class="border-line"></div>
+                    <div class="form-elements-container">
+                        <div class="form-elements-heading">Email</div>
+                        <input type="email" name="email" class="input-box" placeholder="">
+                    </div>
+                    <div class="border-line"></div>
+                    <div class="form-elements-container">
+                        <div class="form-elements-heading">Contact</div>
+                        <input type="text" name="contact" class="input-box" placeholder="">
+                    </div>
+                    <div class="border-line"></div>
+                    <div class="form-elements-container">
+                        <div class="form-elements-heading">Password</div>
+                        <input type="password" name="password" class="input-box" placeholder="">
+                    </div>
+                    <div class="border-line"></div>
+                    <div class="form-elements-container">
+                        <div class="form-elements-heading">Confirm Password</div>
+                        <input type="password" name="confirmpassword" class="input-box" placeholder="">
+                    </div>
+                    <div class="border-line"></div>
+                    <button type="submit" id="submit-btn">Create Account</button>
+                </form>
+            </div>
+            
+            <div class="google">
+                <div class="google-logo">
+                    <img src="./Assets/Images/Google-icon.png" alt="google-logo" height="20px" width="20px">
+                </div>
+                <div class="google-content">
+                    Sign up with Google
+                </div>
+            </div>
+            <div class="login-container">
+                Already have an account? <span class="log-in-box">Log in</span>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

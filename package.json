@@ -1,0 +1,29 @@
+{
+  "name": "diversion-2k23-project",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/app.js -e js,hbs",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sshiwangi/Diversion-2k23-project.git"
+  },
+  "author": "TheFabCoders",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sshiwangi/Diversion-2k23-project/issues"
+  },
+  "homepage": "https://github.com/sshiwangi/Diversion-2k23-project#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "country-state-city": "^3.1.2",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "hbs": "^4.2.0",
+    "mongoose": "^6.9.2",
+    "validator": "^13.9.0"
+  }
+}

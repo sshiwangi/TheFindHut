@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/landingpage.css">
+    <link rel="stylesheet" href="/css/hostels.css">
+    <title>Pg</title>
+</head>
+<body>
+    <section class="header-section-hostels">
+        <nav class="nav-bar-hostels">
+            <div class="brand-name-hostels">Logo.</div>
+            <div class="nav-search-hostels">
+                <div class="search-item-hostels">Search</div>
+                <div class="search-icon-hostels">
+                    <img src="/Assets/Images/search-icon.png" alt="" width="20px" height="20px">
+                </div>
+            </div>
+            <div class="user-authentication-hostels"></div>
+        </nav>
+        <div class="filters-section-hostels">
+            <div class="filter-item-box-hostels">
+                <select name="gender" id="gender">
+                    <option value="">Gender</option>
+                    <option value="Female">Female</option>
+                    <option value="Male">Male</option>
+                </select>
+            </div> 
+            <div class="filter-item-box-hostels">
+                {{!-- Budget <span class="down-arrow-hostels">
+                    <img src="/Assets/Images/down-arrow.png" alt="" width="16px" height="16px">
+                </span> --}}
+                <select name="budget" id="budget">
+                    <option value="">Budget</option>
+                    <option value="below 2000">Below $2000</option>
+                    <option value="2000 - 5000">$2000 - $5000</option>
+                    <option value="Above 5000">Above 5000</option>
+                </select>
+            </div>
+            <div class="filter-item-box-hostels">
+                {{!-- Wi-Fi <span class="down-arrow-hostels">
+                    <img src="/Assets/Images/down-arrow.png" alt="" width="16px" height="16px">
+                </span> --}}
+                <select name="wifi" id="wifi">
+                    <option value="">wifi</option>
+                    <option value="yes">yes</option>
+                    <option value="no">no</option>
+                </select>
+            </div>
+            <div class="filter-item-box-hostels">
+                <select name="meals" id="meals">
+                    <option value="">Meals</option>
+                    <option value="yes">yes</option>
+                    <option value="no">no</option>
+                </select>
+            </div>
+            <div class="filter-item-box-hostels">
+                <select name="roomtype" id="roomtype">
+                    <option value="">Room Type</option>
+                    <option value="shared">shared</option>
+                    <option value="single">single</option>
+                </select>
+            </div>
+            <div class="filter-item-box-hostels">
+                <select name="laundary" id="laundary">
+                    <option value="">Laundary</option>
+                    <option value="yes">yes</option>
+                    <option value="no">no</option>
+                </select>
+            </div>
+            <div class="filter-item-box-hostels">
+                <select name="filters" id="filters">
+                    <option value="">Filters</option>
+                    {{!-- <option value="yes">yes</option>
+                    <option value="no">no</option> --}}
+                </select>
+            </div>
+        </div>
+    </section>
+    <section class="main-section-hostels">
+        <div class="section-heading-hostels">
+            Pg 
+        </div>
+        <div class="items-container-hostels">
+            {{!-- <div class="items-hostels">
+                <div class="items-image-hostels">
+                </div>
+                <div class="items-details-hostels">
+                    ShantiNiketan Pg <br>
+                    Dum Dum, Kolkata <br>
+                    $ 3000 onwards
+                </div>
+                <div class="btn-container-hostels">
+                    <div class="view-details-btn-hostels">
+                        View Details
+                    </div>
+                </div>
+            </div>
+            <div class="items-hostels">
+                <div class="items-image-hostels"></div>
+                <div class="items-details-hostels">
+                    ShantiNiketan Pg <br>
+                    Dum Dum, Kolkata <br>
+                    $ 3000 onwards
+                </div>
+                <div class="btn-container-hostels">
+                    <div class="view-details-btn-hostels">
+                        View Details
+                    </div>
+                </div>
+            </div>
+            <div class="items-hostels">
+                <div class="items-image-hostels"></div>
+                <div class="items-details-hostels">
+                    ShantiNiketan Pg <br>
+                    Dum Dum, Kolkata <br>
+                    $ 3000 onwards
+                </div>
+                <div class="btn-container-hostels">
+                    <div class="view-details-btn-hostels">
+                        View Details
+                    </div>
+                </div>
+            </div>
+            <div class="items-hostels">
+                <div class="items-image-hostels"></div>
+                <div class="items-details-hostels">
+                    ShantiNiketan Pg <br>
+                    Dum Dum, Kolkata <br>
+                    $ 3000 onwards
+                </div>
+                <div class="btn-container-hostels">
+                    <div class="view-details-btn-hostels">
+                        View Details
+                    </div>
+                </div>
+            </div>
+            <div class="items-hostels">
+                <div class="items-image-hostels"></div>
+                <div class="items-details-hostels">
+                    ShantiNiketan Pg <br>
+                    Dum Dum, Kolkata <br>
+                    $ 3000 onwards
+                </div>
+                <div class="btn-container-hostels">
+                    <div class="view-details-btn-hostels">
+                        View Details
+                    </div>
+                </div>
+            </div>
+            <div class="items-hostels">
+                <div class="items-image-hostels"></div>
+                <div class="items-details-hostels">
+                    ShantiNiketan Pg <br>
+                    Dum Dum, Kolkata <br>
+                    $ 3000 onwards
+                </div>
+                <div class="btn-container-hostels">
+                    <div class="view-details-btn-hostels">
+                        View Details
+                    </div>
+                </div>
+            </div>
+            <div class="items-hostels">
+                <div class="items-image-hostels"></div>
+                <div class="items-details-hostels">
+                    ShantiNiketan Pg <br>
+                    Dum Dum, Kolkata <br>
+                    $ 3000 onwards
+                </div>
+                <div class="btn-container-hostels">
+                    <div class="view-details-btn-hostels">
+                        View Details
+                    </div>
+                </div>
+            </div>
+            <div class="items-hostels">
+                <div class="items-image-hostels"></div>
+                <div class="items-details-hostels">
+                    ShantiNiketan Pg <br>
+                    Dum Dum, Kolkata <br>
+                    $ 3000 onwards
+                </div>
+                <div class="btn-container-hostels">
+                    <div class="view-details-btn-hostels">
+                        View Details
+                    </div>
+                </div>
+            </div>
+            <div class="items-hostels">
+                <div class="items-image-hostels"></div>
+                <div class="items-details-hostels">
+                    ShantiNiketan Pg <br>
+                    Dum Dum, Kolkata <br>
+                    $ 3000 onwards
+
+                </div>
+                <div class="btn-container-hostels">
+                    <div class="view-details-btn-hostels">
+                        View Details
+                    </div>
+                </div>
+            </div>
+            <div class="items-hostels">
+                <div class="items-image-hostels"></div>
+                <div class="items-details-hostels">
+                    ShantiNiketan Pg <br>
+                    Dum Dum, Kolkata <br>
+                    $ 3000 onwards
+                </div>
+                <div class="btn-container-hostels">
+                    <div class="view-details-btn-hostels">
+                        View Details
+                    </div>
+                </div>
+            </div>
+            <div class="items-hostels">
+                <div class="items-image-hostels"></div>
+                <div class="items-details-hostels">
+                    ShantiNiketan Pg <br>
+                    Dum Dum, Kolkata <br>
+                    $ 3000 onwards
+                </div>
+                <div class="btn-container-hostels">
+                    <div class="view-details-btn-hostels">
+                        View Details
+                    </div>
+                </div>
+            </div>
+            <div class="items-hostels">
+                <div class="items-image-hostels"></div>
+                <div class="items-details-hostels">
+                    ShantiNiketan Pg <br>
+                    Dum Dum, Kolkata <br>
+                    $ 3000 onwards
+                </div>
+                <div class="btn-container-hostels">
+                    <div class="view-details-btn-hostels">
+                        View Details
+                    </div>
+                </div>
+            </div> --}}
+        </div>
+    </section>
+    {{>footer}}
+    <script src="/js/pg.js"></script>
+</body>
+</html>
