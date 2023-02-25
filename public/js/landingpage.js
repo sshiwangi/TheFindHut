@@ -136,15 +136,12 @@ const footerSection=document.querySelector('.footer-section');
 const footerItemsContent=document.querySelector('.footer-items-content');
 const SearchBoxItemCity=document.getElementById('city');
 const ServicesItem=document.querySelectorAll('.services-item');
-const working_section=document.querySelectorAll('.working-section-image-graphics-landing-page');
-const item_heading=document.querySelectorAll('.item-heading');
-const servicesItemContent=document.querySelectorAll('.services-item-restcontent');
-// const ServicesItemHeading=document.querySelectorAll('.services-item-heading');
+const ServicesItemHeading=document.querySelectorAll('.services-item-heading');
 const about_section_content=document.querySelector('.about-section-content');
-// const option_ele=document.querySelector('option');
-
+const item_heading=document.querySelectorAll('.item-heading');
 const Section_heading=document.querySelectorAll('.section-heading');
-
+ const working_section=document.querySelectorAll('.working-section-image-graphics-landing-page');
+// const services_item=documnet.queryselectorAll('.services-item');
 
 toggle.addEventListener('click', function(){
     this.classList.toggle('bi-moon');
@@ -155,23 +152,13 @@ toggle.addEventListener('click', function(){
         searchBoxContainer.style.border='1px solid black';
         propertyType.style.color='black';
         SearchBoxItemCity.style.color='black';
-        // ServicesItem.forEach(items=>{
-        //     items.style.background='white';
-        // });
-        // ServicesItemHeading.forEach(item=>{
-        //     item.style.color='black';
-        // });
-    //    servicesItemContent.style.background='white';
-    // ServicesItem.forEach(ele=>{
-    //  ele.style.color='white';
-    // });
-
-    // option_ele.style.color='black';
-    //  ServicesItem.style.background='white';
-//    servicesItemContent.style.background='white';
-       servicesItemContent.forEach(ele=>{
-        ele.style.color='black';
-       })
+        ServicesItem.forEach(items=>{
+            items.style.background='white';
+        });
+        ServicesItemHeading.forEach(item=>{
+            item.style.color='black';
+        });
+     
        
     }
     else{
@@ -181,27 +168,12 @@ toggle.addEventListener('click', function(){
         searchBoxContainer.style.border='1px solid white';
         propertyType.style.color='white';
         SearchBoxItemCity.style.color='white';
-        // ServicesItem.forEach(items=>{
-        //     items.style.background='white';
-        // });
-        // ServicesItemHeading.forEach(item=>{
-        //     item.style.color='black';
-        // });
-       
-        
-    //     ServicesItem.forEach(ele=>{
-     
-    // option_ele.style.color='black';
-    //     ServicesItem.forEach(ele=>{
-    //  ele.style.color='white';
-    // });
-    // ServicesItem.style.background='white';
-    //  servicesItemContent.forEach(items=>{
-    //     items.style.background='white';
-    // });
-     servicesItemContent.forEach(ele=>{
-        ele.style.color='#00D285';
-       })
+        ServicesItem.forEach(items=>{
+            items.style.background='white';
+        });
+        ServicesItemHeading.forEach(item=>{
+            item.style.color='black';
+        });
     } 
   
 });
@@ -251,10 +223,8 @@ function toggleActive() {
         ele.classList.remove('active');
     }
   });
+  
 }
-// window.addEventListener('scroll', toggleActive);
-//  $(window).on("load",function(){
-//         $(".loader-wrapper").fadeout("slow");
-//     });
 
+window.addEventListener('scroll', toggleActive);
 
