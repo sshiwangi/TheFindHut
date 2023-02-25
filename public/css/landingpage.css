@@ -26,11 +26,13 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 140px;
-    font-size:18px;
+    width: 15%;
+    font-size:17px;
 }
 .brand-name{
     font-size:24px;
+    display: flex;
+    align-items: center;
 }
 .log-in a{
     text-decoration: none;
@@ -103,6 +105,7 @@ span.main-heading-item {
 }
 select#propertytype {
     height: 100%;
+    outline:none;
 }
 input#city {
     width: 90%;
@@ -145,6 +148,13 @@ span.search-box-item-logo {
     align-items: center;
     margin-top: 100px;
     padding: 50px 100px;
+    opacity:0;
+    transform:scale(0.8);
+    transition:opacity 0.5s ease-in-out,transform 0.5s ease-in-out;
+}
+.about-section-content.active{
+    opacity:1;
+    transform:scale(1);
 }
 .image-container{
     width: 300px;
@@ -233,12 +243,29 @@ section.our-services-section {
     display: flex;
     align-items: center;
     justify-content: center;
+    opacity:0;
+    transform: scale(0.8);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    }
+    
+.section-heading.active {
+    opacity: 1;
+    transform: scale(1);
 }
+
+
 .services-item {
     width: 280px;
     box-shadow: 5px 5px 5px #c5c1c1;
     margin-bottom: 50px;
     /* margin-right: 40px; */
+    opacity:0;
+    transform:scale(0.8);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+.services-item.active{
+    opacity:1;
+    transform:scale(1);
 }
 .services-item-top-section {
     background-color: #00d285;
@@ -304,12 +331,45 @@ section.working-section {
 .item-heading {
     font-size: 19px;
     font-weight: 600;
+    opacity:0;
+    animation: slide-left 5s;
+    transform: scale(0.8);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+
+}
+.item-heading.slide-left{
+    width:100%;
+    overflow:hidden;
+}
+@keyframes slide-left{
+    from{
+        margin-right:0;
+        width:200%;
+    }
+    to{
+        margin-right: 20px;
+        width:100%;
+    }
+}
+.item-heading.active{
+    opacity:1;
+    transform:scale(1);
 }
 .working-section-item-image-container {
     margin-right: 100px;
     display: flex;
-    align-items: flex-start;
+    align-items: flex-start;  
     /* width: 50%; */
+}
+.working-section-image-graphics-landing-page{
+    opacity:0;
+    /* transform-origin: left; */
+    transform:scaleX(0.8);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+.working-section-image-graphics-landing-page.active{
+    opacity:1;
+    transform:scalex(1);
 }
 .working-section-item-image-container2{
     margin-left: 100px;
@@ -369,6 +429,7 @@ select {
 section.footer-section {
     background-color: #1b1a1a;
     color: white;
+    border-top:3px solid #00D285;
 }
 .footer-items-content {
     display: flex;
@@ -497,6 +558,11 @@ span#footer-items-heading:hover {
     .section-item-container {
         grid-template-columns: repeat(2, 1fr);
     }
+    .user-authentication{
+        width:20%;
+        font-size:17px;
+
+    }
 }
 @media screen and (max-width: 768px){
     .working-section-item-image-container{
@@ -516,6 +582,10 @@ span#footer-items-heading:hover {
     }
     .section-item-container {
         grid-template-columns: repeat(1, 1fr);
+    }
+    .user-authentication {
+        width: 25%;
+        font-size: 15px;
     }
     
 }
@@ -583,10 +653,67 @@ span#footer-items-heading:hover {
     .main-heading {
         font-size: 25px;
     }
+    .user-authentication{
+        width:30%;
+        font-size: 14px;
+    }
 }
 @media screen and (max-width: 460px) {
     #image-hostel {
         height:200px;
     }
+    .user-authentication{
+        width: 35%;
+        font-size:13px;
+        margin-right:5px;
+    }
     
 }
+svg{
+    margin-right:5px;
+    
+}
+h1 {
+    margin-top: 60px;
+    color: #222;
+    font-weight: normal;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.1);
+}
+/* 
+.loader {
+    width: 8px;
+    height: 8px;
+    margin: 40px auto;
+    opacity: 0.5;
+    border-radius: 50%;
+    box-shadow:
+        0 -14px 0 rgba(255, 255, 255, 0.8),
+        10px -10px 0 rgba(255, 255, 255, 0.7),
+        14px 0px 1px rgba(255, 255, 255, 0.6),
+        10px 10px 1px rgba(255, 255, 255, 0.5),
+        0px 14px 2px rgba(255, 255, 255, 0.4),
+        -10px 10px 2px rgba(255, 255, 255, 0.3),
+        -14px 0px 3px rgba(255, 255, 255, 0.2),
+        -10px -10px 3px rgba(255, 255, 255, 0.1);
+    transform-origin: 50%;
+    animation: load 0.5s steps(8, end) infinite;
+}
+
+@keyframes load {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.loader-wrapper{
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    background-color: #00D285;
+} */
