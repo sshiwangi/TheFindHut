@@ -136,13 +136,16 @@ const footerSection=document.querySelector('.footer-section');
 const footerItemsContent=document.querySelector('.footer-items-content');
 const SearchBoxItemCity=document.getElementById('city');
 const ServicesItem=document.querySelectorAll('.services-item');
-const ServicesItemHeading=document.querySelectorAll('.services-item-heading');
+// const ServicesItemHeading=document.querySelectorAll('.services-item-heading');
 const about_section_content=document.querySelector('.about-section-content');
 const item_heading=document.querySelectorAll('.item-heading');
 const Section_heading=document.querySelectorAll('.section-heading');
- const working_section=document.querySelectorAll('.working-section-image-graphics-landing-page');
+const working_section=document.querySelectorAll('.working-section-image-graphics-landing-page');
+// const item_content=document.querySelectorAll('.services-item-content');
+//  const item_content=document.querySelectorAll('.services-item-content');
 // const services_item=documnet.queryselectorAll('.services-item');
 
+const Rest_Content=document.getElementsByClassName('.services-item-restcontent');
 toggle.addEventListener('click', function(){
     this.classList.toggle('bi-moon');
     if(this.classList.toggle('bi-brightness-high-fill')){
@@ -155,10 +158,7 @@ toggle.addEventListener('click', function(){
         ServicesItem.forEach(items=>{
             items.style.background='white';
         });
-        ServicesItemHeading.forEach(item=>{
-            item.style.color='black';
-        });
-     
+       
        
     }
     else{
@@ -170,10 +170,8 @@ toggle.addEventListener('click', function(){
         SearchBoxItemCity.style.color='white';
         ServicesItem.forEach(items=>{
             items.style.background='white';
-        });
-        ServicesItemHeading.forEach(item=>{
-            item.style.color='black';
-        });
+        })
+        
     } 
   
 });
