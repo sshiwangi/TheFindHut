@@ -50,6 +50,10 @@ hr.hr-home {
     border: 1px solid white;
     border-radius: 9px;
 }
+.list-property-home:hover{
+    opacity:0.9;
+   
+}
 .main-section-item-home {
     padding: 80px;
 }
@@ -124,6 +128,10 @@ a.list-property-link {
     text-decoration: none;
     color: white;
 }
+/* a.list-property-link:hover{
+    color:black;
+    
+} */
 
 /* .column-apartment-in-kolkata-2 {
     width: 420px;
@@ -356,14 +364,18 @@ a.list-property-link {
 } */ 
 .property-image-home:hover{
     transform:translate(0px,-10px);
+
 }
 .popular-property-type-item-details-container:hover{
     opacity:0.8;
 }
+
+
 .list-property-home:hover{
     opacity:0.9;
    
 }
+
 svg{
     margin-right:5px;
 }
@@ -371,4 +383,8 @@ svg{
     display: flex;
     align-items: center;
     font-size: 24px;
+
 }
+
+}
+
