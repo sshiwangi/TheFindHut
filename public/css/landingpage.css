@@ -74,6 +74,9 @@ section.main-section {
 #image-hostel{
     margin-top:50px;
 }
+select#location {
+    width: 40%;
+}
 .search-box-container {
     border: 1px solid black;
     border-radius: 9px;
@@ -273,12 +276,14 @@ section.our-services-section {
 }
 .services-item-content {
     padding: 10px;
+    background-color: white;
 }
 .services-item-heading {
     font-size: 17px;
     font-weight: 600;
     margin-top: 17px;
     margin-bottom: 10px;
+    color:black;
 }
 .services-item-restcontent {
     color: #292929;

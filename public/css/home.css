@@ -50,6 +50,10 @@ hr.hr-home {
     border: 1px solid white;
     border-radius: 9px;
 }
+.list-property-home:hover{
+    opacity:0.9;
+   
+}
 .main-section-item-home {
     padding: 80px;
 }
@@ -66,6 +70,7 @@ hr.hr-home {
     margin-right: 40px;
     background-size: cover;
     background-position: center;
+    margin-bottom:10px;
     
 }
 img.property-image-home {
@@ -123,6 +128,10 @@ a.list-property-link {
     text-decoration: none;
     color: white;
 }
+/* a.list-property-link:hover{
+    color:black;
+    
+} */
 
 /* .column-apartment-in-kolkata-2 {
     width: 420px;
@@ -353,3 +362,18 @@ a.list-property-link {
     font-size: 19px;
 
 } */ 
+.property-image-home:hover{
+    transform:translate(0px,-10px);
+  
+}
+.popular-property-type-item-details-container:hover{
+    opacity:0.8;
+}
+svg{
+    margin-right:5px;
+}
+.brand-name-home{
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+}
