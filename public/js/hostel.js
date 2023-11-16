@@ -5,7 +5,7 @@ fetch(`/addproperty.hbs/hostel`)
   })
   .then((data) => {
     data.forEach((element) => {
-      console.log(element);
+      // console.log(element);
       const property_item_container = document.createElement("div");
       property_item_container.classList.add("items-hostels");
 

@@ -34,6 +34,7 @@ const sellerPropertySchema = new mongoose.Schema({
         type: String,
         required: true
     }
+
 })
 
 

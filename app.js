@@ -2,6 +2,8 @@ const express = require("express");
 const path = require("path");
 const bcrypt = require("bcryptjs");
 const hbs = require("hbs");
+const router = express.Router();
+const multer = require("multer");
 const app = express();
 
 // connecting to mongodb atlas
@@ -81,6 +83,9 @@ app.get("/propertydetails.hbs", (req, res) => {
 app.get("/profilepage.hbs", (req, res) => {
   res.render("profilepage");
 });
+// app.get("/explore.hbs", (req, res) => {
+//   res.render("explore");
+// });
 //sign up
 app.post("/signup.hbs", async (req, res) => {
   try {
@@ -142,6 +147,10 @@ app.post("/addproperty.hbs", async (req, res) => {
       budget: req.body.budget,
       wifi: req.body.wifi,
       laundary: req.body.laundary,
+      // imgfile: {
+      //   data: fstat.readFileSync(path.join(__dirname + '/uploads/' + req.file.filename)),
+      //   contentType: 'image/png'
+      // }
     });
     const sellerpropertydetail = await sellerspropertydetails.save();
     // console.log({selectedPropertyType})
@@ -159,25 +168,95 @@ app.post("/addproperty.hbs", async (req, res) => {
   }
 });
 
-app.get("/addproperty.hbs/:propertytype", async (req, res) => {
-    // const location = req.params.location;
-    const propertytype = req.params.propertytype;
-    console.log(req.params.propertytype);
-    propertydetails.find({ propertytype},  (error, item) => {
-      if (error) {
-        res.status(500).send(error);
-      } else if (!item) {
-        res
-          .status(404)
-          .send({ message: "Email does not exist or write the email properly" });
-      } else {
-        res.status(200).send(item);
-      }
-    });
-  });
-        
-        // {console.log("blah"+req.user._id)}
+// storage
+// const storage = multer.diskStorage({
+// destination: "uploads",
+// filename: (req, file, cb) => {
+//   cb(null, file.originalname);
+// },
+//   destination: (req, file, cb) => {
+//     cb(null, 'uploads')
+//   },
+//   filename: (req, file, cb) => {
+//     cb(null, file.fieldname + '-' + Date.now())
+//   }
+// });
 
+// const upload = multer({
+//   storage: Storage,
+// }).single("testImage");
+// const upload = multer({ storage: storage});
+
+// app.post('/upload', (req, res) => {
+//   upload(req, res, (err) => {
+//     if(err){
+//       console.log(err)
+//     }
+//     else{
+//       const newImage = new propertydetails({
+//         imgfile: {
+//           data:req.file.filename,
+//           contentType: 'image/png'
+//         },
+//       });
+//       newImage.save()
+//       .then(() => res.send("image uploaded successfully"))
+//       .catch((err) => console.log(err));
+//     }
+//   })
+// })
+
+//filtering out data on the basis of property type
+// app.get("/addproperty.hbs/:propertytype/:location", async (req, res) => {
+
+// app.get("/addproperty.hbs/:propertytype", async (req, res) => {
+//   // const location = req.params.location;
+//   const propertytype = req.params.propertytype;
+//   // console.log(req.params.propertytype);
+//   propertydetails.find({ propertytype: propertytype }, (error, item) => {
+//     // propertydetails.find({$and : [ {propertytype}, {location}]}, (error, item ) => {
+//     if (error) {
+//       res.status(500).send(error);
+//     } else if (!item) {
+//       res
+//         .status(404)
+//         .send({ message: "Email does not exist or write the email properly" });
+//     } else {
+//       res.status(200).render(item);
+//     }
+//   });
+// });
+
+app.get("/explore.hbs", async (req, res) => {
+  const location = req.query.location;
+  const propertytype = req.query.propertytype;
+  console.log({ location, propertytype });
+
+  try {
+    const properties = await propertydetails.find({
+      location: location,
+      propertytype: propertytype,
+    });
+    console.log("Properties:", properties);
+    res.render("explore.hbs", { properties });
+  } catch (error) {
+    console.log(error);
+    res.status(500).send("Internal server error");
+  }
+});
+// const getDocument = async (req, res) => {
+//   try {
+//     const location = req.params.location;
+//     const propertytype = req.params.propertytype;
+//     const result = await propertydetails
+//     .find({$and: [ {propertytype}, {location}]}).select({name:1})
+//     console.log(result);
+//   }catch(err){
+//     console.log(err);
+//   }
+// }
+
+// {console.log("blah"+req.user._id)}
 
 // let countries = require('country-state-city').Country;
 // let State = require('country-state-city').State;

@@ -128,4 +128,14 @@ for(i = 0; i< question_item.length; i++){
 //     }
 // })
 
+const search_btn = document.querySelector('.search');
+search_btn.addEventListener('click', function(){
+    const selected_location = document.getElementById('city').value;
+    const selected_propertytype = document.getElementById('propertytype').value;
+    // fetch('')
+    console.log(selected_location);
+    console.log(selected_propertytype);
+})
+
+
 
