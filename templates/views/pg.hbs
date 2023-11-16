@@ -6,10 +6,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/landingpage.css">
     <link rel="stylesheet" href="/css/hostels.css">
+    <link rel="icon" href="/Assets/Images/home (1).png">
     <title>Pg</title>
 </head>
 <body>
+<<<<<<< HEAD
     {{>header}}
+=======
+    <section class="header-section-hostels">
+        <nav class="nav-bar-hostels">
+            <div class="brand-name-hostels"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="#ffffff" class="bi bi-house-fill"
+                viewBox="0 0 16 16">
+                <path
+                    d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z" />
+                <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z" />
+            </svg>FindHut.</div>
+            <div class="nav-search-hostels">
+                <div class="search-item-hostels">Search</div>
+                <div class="search-icon-hostels">
+                    <img src="/Assets/Images/search-icon.png" alt="" width="20px" height="20px">
+                </div>
+            </div>
+            <div class="user-authentication-hostels"></div>
+        </nav>
+        <div class="filters-section-hostels">
+            <div class="filter-item-box-hostels">
+                <select name="gender" id="gender">
+                    <option value="">Gender</option>
+                    <option value="Female">Female</option>
+                    <option value="Male">Male</option>
+                </select>
+            </div> 
+            <div class="filter-item-box-hostels">
+                {{!-- Budget <span class="down-arrow-hostels">
+                    <img src="/Assets/Images/down-arrow.png" alt="" width="16px" height="16px">
+                </span> --}}
+                <select name="budget" id="budget">
+                    <option value="">Budget</option>
+                    <option value="below 2000">Below $2000</option>
+                    <option value="2000 - 5000">$2000 - $5000</option>
+                    <option value="Above 5000">Above 5000</option>
+                </select>
+            </div>
+            <div class="filter-item-box-hostels">
+                {{!-- Wi-Fi <span class="down-arrow-hostels">
+                    <img src="/Assets/Images/down-arrow.png" alt="" width="16px" height="16px">
+                </span> --}}
+                <select name="wifi" id="wifi">
+                    <option value="">wifi</option>
+                    <option value="yes">yes</option>
+                    <option value="no">no</option>
+                </select>
+            </div>
+            <div class="filter-item-box-hostels">
+                <select name="meals" id="meals">
+                    <option value="">Meals</option>
+                    <option value="yes">yes</option>
+                    <option value="no">no</option>
+                </select>
+            </div>
+            <div class="filter-item-box-hostels">
+                <select name="roomtype" id="roomtype">
+                    <option value="">Room Type</option>
+                    <option value="shared">shared</option>
+                    <option value="single">single</option>
+                </select>
+            </div>
+            <div class="filter-item-box-hostels">
+                <select name="laundary" id="laundary">
+                    <option value="">Laundary</option>
+                    <option value="yes">yes</option>
+                    <option value="no">no</option>
+                </select>
+            </div>
+            <div class="filter-item-box-hostels">
+                <select name="filters" id="filters">
+                    <option value="">Filters</option>
+                    {{!-- <option value="yes">yes</option>
+                    <option value="no">no</option> --}}
+                </select>
+            </div>
+        </div>
+    </section>
+>>>>>>> 6436731bd4f7a68e2fdef37ca23ddec1d5a468b8
     <section class="main-section-hostels">
         <div class="section-heading-hostels">
             Pg

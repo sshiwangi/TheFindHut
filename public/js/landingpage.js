@@ -128,6 +128,7 @@ for(i = 0; i< question_item.length; i++){
 //     }
 // })
 
+<<<<<<< HEAD
 const search_btn = document.querySelector('.search');
 search_btn.addEventListener('click', function(){
     const selected_location = document.getElementById('city').value;
@@ -138,4 +139,103 @@ search_btn.addEventListener('click', function(){
 })
 
 
+=======
+const toggle = document.getElementById('toggleDark');
+const body = document.querySelector('body');
+const searchBoxContainer=document.querySelector('.search-box-container');
+const propertyType=document.getElementById('propertytype');
+const footerSection=document.querySelector('.footer-section');
+const footerItemsContent=document.querySelector('.footer-items-content');
+const SearchBoxItemCity=document.getElementById('city');
+const ServicesItem=document.querySelectorAll('.services-item');
+// const ServicesItemHeading=document.querySelectorAll('.services-item-heading');
+const about_section_content=document.querySelector('.about-section-content');
+const item_heading=document.querySelectorAll('.item-heading');
+const Section_heading=document.querySelectorAll('.section-heading');
+const working_section=document.querySelectorAll('.working-section-image-graphics-landing-page');
+// const item_content=document.querySelectorAll('.services-item-content');
+//  const item_content=document.querySelectorAll('.services-item-content');
+// const services_item=documnet.queryselectorAll('.services-item');
+
+const Rest_Content=document.getElementsByClassName('.services-item-restcontent');
+toggle.addEventListener('click', function(){
+    this.classList.toggle('bi-moon');
+    if(this.classList.toggle('bi-brightness-high-fill')){
+        body.style.background = 'white';
+        body.style.color = 'black';
+        body.style.transition = '2s';
+        searchBoxContainer.style.border='1px solid black';
+        propertyType.style.color='black';
+        SearchBoxItemCity.style.color='black';
+        ServicesItem.forEach(items=>{
+            items.style.background='white';
+        });
+       
+       
+    }
+    else{
+        body.style.background = 'black';
+        body.style.color = 'white';
+        body.style.transition = '2s';
+        searchBoxContainer.style.border='1px solid white';
+        propertyType.style.color='white';
+        SearchBoxItemCity.style.color='white';
+        ServicesItem.forEach(items=>{
+            items.style.background='white';
+        })
+        
+    } 
+  
+});
+function isInView(elem) {
+  const bounding = elem.getBoundingClientRect();
+  return (
+    bounding.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+    bounding.bottom >= 0
+  );
+}
+
+function toggleActive() {
+  if (isInView(about_section_content)) {
+    about_section_content.classList.add('active');
+  } else {
+    about_section_content.classList.remove('active');
+  }
+  ServicesItem.forEach(ele=>{
+    if(isInView(ele)){
+        ele.classList.add('active');
+    }
+    else{
+        ele.classList.remove('active');
+    }
+   });
+  Section_heading.forEach(ele=>{
+    if(isInView(ele)){
+        ele.classList.add('active');
+    }
+    else{
+        ele.classList.remove('active');
+    }
+  });
+  working_section.forEach(ele=>{
+    if(isInView(ele)){
+        ele.classList.add('active');
+    }
+    else{
+        ele.classList.remove('active');
+    }
+  });
+  item_heading.forEach(ele=>{
+    if(isInView(ele)){
+        ele.classList.add('active');
+    }
+    else{
+        ele.classList.remove('active');
+    }
+  });
+  
+}
+
+window.addEventListener('scroll', toggleActive);
+>>>>>>> 6436731bd4f7a68e2fdef37ca23ddec1d5a468b8
 

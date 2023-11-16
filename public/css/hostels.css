@@ -21,6 +21,10 @@ section.header-section-hostels {
 }
 .brand-name-hostels {
     font-size: 24px;
+    display: flex;
+    // display: flex;
+
+    align-items:center;
 }
 .nav-search-hostels {
     background-color: white;

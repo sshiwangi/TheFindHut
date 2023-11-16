@@ -1,12 +1,12 @@
 const mongoose = require("mongoose");
 const validator = require("validator");
-const bcrypt = require("bcryptjs");
+var bcrypt = require("bcryptjs");
 
 const usersSchema = new mongoose.Schema({
     name: {
         type: String,
         required: true
-    },
+    },  
     email: {
         type: String,
         required: true,
